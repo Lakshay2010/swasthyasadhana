@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasthya Sadhana - Holistic Health & Wellness</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <head>
+        <!-- Google Font Import (if available) -->
+        <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    </head>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="heading" style="color: #F2E5BF;">
+                <img src="https://i.ibb.co/nBRcW8x/Green-Simple-Yoga-Nature-Logo.png" alt="Logo" class="logo">
+                स्वास्थ्य साधना
+            </h1>
+            <button id="menu-icon" class="menu-icon">☰</button>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#chatbot">Chatbot</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="sixtyfour-convergence-banner" id="Swasthya">Welcome to Swasthya Sadhana!</h1>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.ibb.co/r7gpqzY/istockphoto-1331426751-612x612-removebg.png" alt="Hero Image" />
+        </div>
+    </section>
+    
+    
+    
+    <section id="home" class="scroll-reveal">
+        <div class="hero" id="hero-background">
+            <p id="typewriter-heading" class="typewriting">Welcome to Swasthya Sadhana</p>
+        </div>
+    </section>
+    
+      
+
+    <section id="home">
+        <div class="hero" id="content" style="text-align: center;">
+            <h2>Embrace Holistic Wellness</h2>
+            <p style="font-size: 1.2em;">
+                Holistic wellness is about more than just treating illness; it's a lifestyle that nurtures the whole person. This approach focuses on the harmony between mind, body, and spirit, understanding that all aspects of our being are interconnected.
+            </p>
+            <img src="https://i.ibb.co/jTHkThy/physicalwellness.jpg" alt="Holistic Wellness" style="width:50%; margin: 20px auto; display: block; animation: fadeIn 2s;">
+            <p style="font-size: 1.2em;">
+                <strong>Physical wellness</strong> involves taking care of your body through healthy habits like proper nutrition, regular exercise, and enough sleep. But holistic wellness takes it further, integrating emotional and spiritual health into daily life.
+            </p>
+            <img src="https://www.ramana-maharshi.org/wp-content/uploads/2024/01/mj_16823_2.jpg" alt="Holistic Practices" style="width:50%; margin: 20px auto; display: block; animation: fadeIn 2s;">
+            <p style="font-size: 1.2em;">
+                <strong>Mental and emotional well-being</strong> is central to holistic wellness. Practices like meditation, mindfulness, and yoga help calm the mind, reduce stress, and foster positive thinking. These practices allow you to stay grounded and improve emotional resilience.
+            </p>
+            <img src="https://t4.ftcdn.net/jpg/05/61/09/25/360_F_561092599_gpcisu5nwfLKacHPn8xfqwLo0eErp9bG.jpg" alt="Mindfulness" style="width:50%; margin: 20px auto; display: block; animation: fadeIn 2s;">
+            <p style="font-size: 1.2em;">
+                Lastly, <strong>spiritual wellness</strong> nurtures your sense of purpose and connection. Whether through personal reflection, religious practices, or connecting with nature, it brings peace and inner harmony.
+            </p>
+            <p style="font-size: 1.2em;">
+                By embracing a holistic approach, you are not just avoiding disease but creating an environment within yourself for health, happiness, and balance. Together, these elements create a path to a fulfilling, healthy life.
+            </p>
+        </div>
+    </section>
+    
+
+    <section id="resources">
+        <h2 class="resources-title">Resources</h2>
+        <div class="resource-grid">
+            <!-- Ayurveda Section -->
+            <div class="resource-item">
+                <img src="https://cdn.shopify.com/s/files/1/0528/5173/6769/files/Ayurvedic-Detoxification.jpg?v=1637149928" alt="Ayurvedic Diets">
+                <h3>Ayurveda</h3>
+                <p>Ayurveda is an ancient holistic health system from India that emphasizes balance between mind, body, and spirit. It uses natural therapies, diet, and lifestyle practices to promote overall well-being and prevent illness.</p>
+                <button class="explore-btn" data-content="ayurveda-content">Explore more</button>
+            </div>
+    
+            <!-- Yoga & Meditation Section -->
+            <div class="resource-item">
+                <img src="https://asset.gecdesigns.com/img/wallpapers/yoga-day-wallpaper-yoga-meditation-with-beautiful-forest-background-sr18062414-cover.webp" alt="Yoga & Meditation">
+                <h3>Yoga & Meditation</h3>
+                <p>Yoga and meditation are ancient practices that promote physical, mental, and spiritual well-being. Combining postures, breathing techniques, and mindfulness, they help reduce stress, increase flexibility, and enhance inner peace.</p>
+                <button class="explore-btn" data-content="yoga-content">Explore more</button>
+            </div>
+    
+            <!-- Naturopathy Section -->
+            <div class="resource-item">
+                <img src="https://www.nimba.in/wp-content/uploads/2021/03/Naturopath_Treatment1.png" alt="Naturopathy">
+                <h3>Naturopathy</h3>
+                <p>Naturopathy is a holistic approach to health that emphasizes the body's innate healing abilities using natural therapies like nutrition, herbal medicine, and lifestyle changes. It aims to treat the root cause of illness, focusing on prevention and overall wellness.</p>
+                <button class="explore-btn" data-content="naturopathy-content">Explore more</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Hidden Content Section (Initially Hidden) -->
+    <section id="hidden-section" class="hidden-content">
+        <div id="hidden-content-container">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </section>
+    
+
+
+    <section id="chatbot">
+        <h2>AI-Powered Health Chatbot</h2>
+        <p>Our AI-powered health chatbot provides personalized, real-time health advice based on holistic wellness principles, including Ayurveda, yoga, and naturopathy. Designed to understand individual needs, it guides users through managing stress, improving diet, and enhancing overall well-being by offering tailored recommendations. Combining advanced AI technology with traditional healing systems, the chatbot creates an interactive and engaging experience, making it easy for users to access expert advice and improve their health anytime, anywhere.</p>
+        <button id="chatbot-button">Start Chat</button>
+    </section>
+    
+    
+
+    <section id="reviews">
+        <h2>User Reviews</h2>
+        <div class="review">
+            <p>"Swasthya Sadhana has transformed my lifestyle! Highly recommend their practices!"</p>
+            <span>- User A</span>
+        </div>
+        <div class="review">
+            <p>"The AI chatbot provided me with personalized guidance that truly worked."</p>
+            <span>- User B</span>
+        </div>
+        <!-- Add more reviews as needed -->
+    </section>
+    
+
+    <section id="login">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Swasthya Sadhana. All Rights Reserved.</p>
+        <p>Made by Lakshay Garg | Assisted by Deepjot Singh</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/prakritik_veda13/profilecard/?igsh=MWxqMW13NTBobHMwMQ==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon" class="instagram-icon">
+            </a>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,1264 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body and Font Styles */
+.logo{
+    border-radius: 200px;
+    width: 50px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f0efe5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2f4f4f;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #4CAF50;
+    margin-top: 0.2em;
+    animation: expandLine 1s ease-out;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Navbar */
+nav {
+    background: #6A9C89;
+    padding: 1.2em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+
+#hero-background {
+
+    height: 25vh;
+    background-attachment: fixed; /* Creates the parallax effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+#content {
+    padding: 20px;
+    text-align: center; /* Ensures all content within the #content section is centered */
+    color: #2f4f4f;
+}
+
+.hero p {
+    margin: 0 auto; /* Centers paragraph margins */
+    max-width: 800px; /* Controls the width of the paragraph */
+    font-size: 1.2em;
+    line-height: 1.8; /* Improves readability */
+    text-align: center; /* Ensures the text within the paragraph is centered */
+}
+
+#content h2 {
+    font-size: 3em;
+    animation: slideIn 1.5s ease-out; /* Match the animation */
+}
+
+
+
+.hero h2 {
+    font-size: 3em;
+    animation: slideIn 1.5s ease-out;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 1em auto;
+}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Sixtyfour+Convergence&display=swap');
+.sixtyfour-convergence-banner {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 
+        "BLED" 0, 
+        "SCAN" 0, 
+        "XELA" 0, 
+        "YELA" 0;
+    text-align: center;
+    font-size: 6em;
+}
+#swasthya{
+    text-align: center;
+    font-size: 5em;
+}
+
+/* Typewriter Effect Styles */
+
+#typewriter-heading {
+    font-family: 'Afacad-Flux''Courier New', Courier, monospace; /* Change the font */
+    font-size: 2.5em; /* Adjust font size */
+    color: #16423C; /* Color of the text */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    border-right: 0.07em solid white; /* Cursor effect */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite; /* Improved typing animation */
+    text-align: center; /* Center the text */
+    max-width: 90%; /* Ensure it fits within the frame */
+    margin: 0 auto; /* Center align */
+}
+
+/* Improved Typewriter Animation */
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%; 
+    }
+}
+
+@keyframes blink-caret {
+    from, to { 
+        border-color: transparent; 
+    }
+    50% { 
+        border-color: white; /* Cursor color */
+    }
+}
+
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes expandLine {
+    from { width: 0; }
+    to { width: 60px; }
+}
+
+/* Educational Resources */
+.resources-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-left: 30px;
+    color: #2f4f4f;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for Educational Resources Title */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.resource-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 4em 2em;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resource-item {
+    background: #fafafa;
+    padding: 2em;
+    border-radius: 10px;
+    width: calc(33.333% - 2em);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resource-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.resource-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+/* Ensure images and content have a fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero img {
+    animation: fadeIn 2s;
+}
+/* Hidden content section */
+.hidden-content {
+    display: none;
+    padding: 2em;
+    background-color: #f9f9f9;
+    border-top: 2px solid #4CAF50;
+    animation: fadeIn 0.5s ease-in-out;
+    margin-top: 2em;
+}
+
+.explore-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 1em;
+}
+
+.explore-btn:hover {
+    background-color: #388e3c;
+}
+
+.custom-link {
+    color: #4CAF50; /* Green color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    font-size: 1.2em; /* Increase font size */
+    padding: 10px 15px; /* Add padding around the text */
+    border-radius: 5px; /* Round the corners */
+    background-color: #f0f8e0; /* Light background color */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transitions */
+    display: inline-block; /* Allow padding and margin */
+}
+
+.custom-link:hover {
+    background-color: #4CAF50; /* Change background on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.custom-link:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Add a custom focus outline */
+}
+
+.custom-link:active {
+    transform: scale(0.95); /* Shrink when clicked */
+}
+
+/* Smooth appearance for the hidden content */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* AI Chatbot Section */
+#chatbot {
+    padding: 4em 2em;
+    background: linear-gradient(120deg, #4CAF50, #81C784);
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+/* Reviews */
+#reviews {
+    padding: 3em 2em;
+    background: #f0efe5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    animation: fadeIn 2s;
+}
+
+.review {
+    background: #e8f5e9;
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border-left: 4px solid #388e3c;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    font-style: italic;
+}
+
+/* Login Form */
+#login {
+    padding: 3em 2em;
+    text-align: center;
+    background: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 400px;
+    margin: 2em auto;
+    background: #f8f8f8;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+input {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #388e3c;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 0.9em;
+}
+
+button, .custom-link {
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover, .custom-link:hover {
+    background-color: #81C784;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.hero h2 {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Apply Hover and Zoom to All Images */
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Indicate interactivity */
+}
+
+img:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+img:active {
+    transform: scale(1.1); /* Zoom in further on click */
+    transition: transform 0.2s ease; /* Smooth transition when clicked */
+}
+/* Button Hover Animation */
+.explore-btn {
+    background-color: #4CAF50;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+    background-color: #388e3c;
+    transform: scale(1.05); /* Zoom effect */
+}
+
+/* Image Hover Animation */
+img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Keyframes for Fade-in and Slide-up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Moves to its original position */
+    }
+}
+
+/* Animate the review section */
+.review {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.review.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Review Hover Effect */
+.review {
+    background: #e8f5e9;
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border-left: 4px solid #388e3c;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.review:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+/* Footer Social Links */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    font-size: 0.9em;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+/* Style for social icons */
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Instagram-specific color improvement */
+.instagram-icon {
+    filter: invert(29%) sepia(93%) saturate(2483%) hue-rotate(314deg) brightness(96%) contrast(95%);
+}
+
+/* Hover effect for social icons */
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2); /* Make the icon pop on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Default styles for desktop */
+.menu-icon {
+    display: none; /* Hide the menu icon by default on desktop */
+}
+/* Base Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em; /* Padding for spacing */
+    background: #6A9C89; /* Navbar background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Logo Styles */
+.logo {
+    width: 40px; /* Adjust logo size */
+    margin-right: 10px; /* Spacing between logo and heading */
+}
+
+/* Navbar Heading Styles */
+#heading {
+    display: flex;
+    align-items: center;
+    color: rgb(25, 82, 77);
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 1.8em; /* Font size for heading */
+}
+
+/* Navbar Links */
+#nav-links {
+    display: flex; /* Flex layout for links */
+    list-style: none; /* No bullet points */
+    gap: 1.5em; /* Spacing between links */
+}
+
+#nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Font size for links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+#nav-links a:hover {
+    color: #ddd; /* Link color on hover */
+}
+
+/* Mobile Menu Button */
+.menu-icon {
+    display: none; /* Hide by default */
+    font-size: 1.5em; /* Decreased size for mobile */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: white; /* Color of the menu icon */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    nav {
+        padding: 1em; /* Adjust padding for mobile */
+    }
+
+    /* Show menu icon on mobile */
+    .menu-icon {
+        display: block; /* Show on mobile */
+    }
+
+    /* Navbar links for mobile */
+    #nav-links {
+        display: none; /* Hide links initially */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+        background-color: #333; /* Background for mobile menu */
+        padding: 10px 0; /* Padding for mobile menu */
+        position: absolute; /* Absolute positioning */
+        top: 60px; /* Position below the navbar */
+        left: 0; /* Align to the left */
+        z-index: 1000; /* Above other elements */
+    }
+
+    /* Style for mobile navbar links */
+    #nav-links a {
+        padding: 15px; /* Increased padding for mobile links */
+        font-size: 0.9em; /* Smaller font size for mobile */
+    }
+
+
+    /* Adjust hero background */
+    #hero-background {
+        background-size: cover; /* Cover background */
+        height: 50vh; /* Height for smaller screens */
+        padding: 2em; /* Padding for background */
+        display: flex; /* Flex for centering content */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+    }
+
+    /* Adjust typewriter text for mobile */
+    #typewriter-heading {
+        font-size: 1.5em; /* Adjust size for mobile */
+        width: 90%; /* Full width with padding */
+        overflow: hidden; /* Prevent overflow */
+        text-align: center; /* Center text */
+    }
+}
+
+
+/* Mobile menu button toggle */
+#menu-icon.active + #nav-links {
+    display: flex;
+}
+
+/* Menu open/close on mobile */
+.menu-icon.active + #nav-links {
+    display: flex; /* Show menu when icon is active */
+}
+
+/* Mobile menu styling */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust based on your nav height */
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    list-style-type: none;
+}
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.mobile-menu li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Show the mobile menu button and hide the default menu */
+    .mobile-menu-button {
+        display: block;
+    }
+
+    nav ul {
+        display: none; /* Hide default menu */
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    /* Resource section adjustments */
+    .resource-grid {
+        flex-direction: column; /* Stack resources vertically */
+        align-items: center;
+    }
+
+    .resource-item {
+        width: 90%; /* Full width for items on mobile */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+}
+/* Smooth transitions for mobile elements */
+#nav-links {
+    transition: all 0.5s ease-in-out;
+}
+
+.chat-container {
+    transition: max-height 0.5s ease-in-out, transform 0.5s ease;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Chatbot button */
+#chatbot-button {
+    background: linear-gradient(120deg, #4CAF50, #388E3C);
+    color: white;
+    margin-top: 2px;
+    padding: 0.8em 2.5em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#chatbot-button:hover {
+    background: linear-gradient(120deg, #67792f, #a7bc6d);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#chatbot-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding a pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(194, 231, 9, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(49, 61, 23, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
+}
+
+#chatbot-button:hover {
+    animation: pulse 1.5s infinite;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #243642; /* Updated Navbar Color */
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+#nav-links li {
+    position: relative;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+#nav-links a:hover {
+    color: #F2E5BF; 
+    transition: all 0.3s ease;
+}
+
+#nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #F2E5BF;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+#nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+    display: none; /* Hidden on desktop */
+    font-size: 1.5em; /* Reduced size */
+    padding: 5px; /* Reduced padding */
+    color: #FFE1FF;
+    background-color: #7E60BF;
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Enhanced hover effect without rotation */
+.menu-icon:hover {
+    color: #E4B1F0; /* Change icon color on hover */
+    transform: scale(1.2); /* Only scale up the icon on hover */
+    background-color: #433878;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    #nav-links {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on nav height */
+        right: 0;
+        background-color: #243642; /* Mobile menu background */
+        width: 200px;
+        height: calc(100vh - 60px); /* Full height minus navbar height */
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        border-left: 1px solid #fff;
+        padding-top: 20px;
+        z-index: 999;
+    }
+
+    /* When nav has 'active' class, show the menu */
+    nav.active #nav-links {
+        display: flex; /* Show menu */
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+}
+
+
+/* Overall Section Styling */
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(30,34,64,1) 0%, rgba(22,24,44,1) 100%);
+    overflow: hidden;
+    flex-direction: column;
+    padding-top: 10vh; /* Adds padding at the top to ensure text is visible */
+}
+
+/* Center Content Styling */
+.hero-content {
+    z-index: 2;
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+    animation: fade-in 1.5s ease-in-out forwards;
+    position: relative; /* Ensure text can overlap with image */
+}
+
+.sixtyfour-convergence-banner {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-size: 5em;
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: text-appear 1.2s ease-in-out forwards;
+    margin-bottom: -50px; /* Negative margin to make the text overlap the image */
+}
+
+/* 3D Image Centered Effect */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: -100px; /* Negative margin to overlap the image with text */
+    animation: floating 6s ease-in-out infinite;
+    z-index: 2; /* Send the image slightly below the text */
+    opacity: 0.8;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Floating Animation for Image */
+@keyframes floating {
+    0% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* Text and Content Animations */
+@keyframes text-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Media Queries for Mobile and Smaller Screens --- */
+
+/* For screens less than 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    .sixtyfour-convergence-banner {
+        font-size: 3rem; /* Slightly smaller for tablets */
+    }
+
+
+    .hero-image {
+        max-width: 400px; /* Smaller image on tablets */
+    }
+}
+
+/* For screens less than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .sixtyfour-convergence-banner {
+        font-size: 2.5rem; /* Even smaller for mobile */
+    }
+
+
+    .hero-image {
+        max-width: 300px; /* Smaller image on mobile */
+    }
+
+    /* Additional mobile-specific adjustments */
+    .hero-section {
+        padding: 0 1rem; /* Add some padding to the sides */
+    }
+}
+
+.hero-image img:hover {
+    transform: none;
+    box-shadow: none;
+}
+/* Transparent Navbar */
+nav {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background 0.5s, padding 0.5s;
+}
+
+nav.scrolled {
+    background: rgba(0, 0, 0, 0.7); /* Dark background when scrolled */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 0.8em 2em; /* Reduced padding when scrolled */
+    transition: background 0.5s ease, padding 0.5s ease;
+}
+
+/* Mobile Navbar Styling */
+@media (max-width: 768px) {
+    nav {
+        padding: 1em; /* Adjusted padding for smaller screens */
+    }
+
+    #nav-links {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9); /* Darker for visibility */
+        width: 100%;
+        top: 60px;
+        left: 0;
+        padding: 1em;
+        z-index: 999;
+        transition: transform 0.5s ease;
+        transition: transform 0.3s ease;
+        transform: translateX(-100%); /* Initial state - hidden */
+        }
+        
+        #nav-links {
+            transition: transform 0.3s ease;
+            transform: translateX(-100%); /* Initial state: hidden off-screen */
+        }
+        
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+        
+        /* Add styles for when the menu is active */
+        #nav-links.active {
+            transform: translateX(0); /* Show menu when active */
+        }
+        
+
+    #nav-links a {
+        padding: 0.5em;
+        color: white; /* Ensure links are visible */
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon on mobile */
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    /* Navbar animation remains consistent across devices */
+    nav {
+        animation: navbar-float 5s infinite ease-in-out;
+    }
+}
+
+/* Base styling for the Embrace Holistic Wellness section */
+#content h2 {
+    font-size: 3em;
+    animation: slideIn 1.5s ease-out;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#content p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    padding: 0 1.5em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Enhanced media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    #content h2 {
+        font-size: 2.5em; /* Adjusted font size for tablets */
+        margin-bottom: 0.4em; /* Reduced margin for better spacing */
+    }
+
+    #content p {
+        font-size: 1em; /* Slightly smaller font size */
+        line-height: 1.6; /* Adjusted line height for readability */
+        padding: 0 1em; /* Reduced padding for smaller screens */
+    }
+}
+
+/* Enhanced media query for mobile screens */
+@media (max-width: 480px) {
+    #content h2 {
+        font-size: 2em; /* Smaller font size for mobile */
+        margin-bottom: 0.3em; /* Adjust margin for compact spacing */
+    }
+
+    #content p {
+        font-size: 0.9em; /* Further reduce paragraph font size for mobile */
+        line-height: 1.5; /* Adjust line height */
+        padding: 0 0.5em; /* Reduced padding to fit smaller screens */
+    }
+}
+
+/* Additional media query for very small mobile screens */
+@media (max-width: 320px) {
+    #content h2 {
+        font-size: 1.8em; /* Further reduce heading size */
+        margin-bottom: 0.2em; /* Compact margin */
+    }
+
+    #content p {
+        font-size: 0.85em; /* Smaller text for very small screens */
+        line-height: 1.4; /* Adjust line height */
+        padding: 0 0.3em; /* Minimal padding for very small displays */
+    }
+}
+
+/* Make images responsive */
+#content img {
+    width: 100%; /* Make images take full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 20px auto; /* Center images with margin */
+    display: block; /* Make sure images are block elements */
+    animation: fadeIn 2s; /* Fade-in effect for images */
+}
+
+/* Media query for tablet-sized displays */
+@media (max-width: 768px) {
+    #content img {
+        max-width: 100%; /* Allow images to fill the container width */
+        margin: 15px auto; /* Adjust margins */
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    #content img {
+        max-width: 100%; /* Keep images full width */
+        margin: 10px auto; /* Adjust margins for smaller screens */
+    }
+}
+/* Default Navbar */
+nav {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Navbar when scrolled */
+nav.scrolled {
+    background-color: rgba(34, 40, 49, 0.94); /* Change this to any desired color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    padding: 0.8em 2em; /* Slightly reduce padding on scroll */
+}
+/* Make the entire list item clickable on mobile */
+#nav-links a {
+    display: block; /* Make the link a block-level element */
+    padding: 15px 20px; /* Add padding for a larger clickable area */
+    width: 100%; /* Ensure it takes up the full width of the parent */
+    box-sizing: border-box; /* Ensure padding doesn't affect the total width */
+    text-align: center; /* Center the text horizontally */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s ease, color 0.3s ease; /* Add hover effects */
+}
+
+/* Add hover effect to give feedback when the user clicks anywhere */
+#nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background change */
+    color: #F2E5BF; /* Change text color on hover */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    #nav-links {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full-width for mobile */
+    }
+
+    #nav-links li {
+        width: 100%; /* Ensure the list item takes up the full width */
+    }
+
+    /* Ensure links are spaced out and clickable anywhere within the li */
+    #nav-links a {
+        width: 100%; /* Make each link take up full width of the list item */
+    }
+}
+/* Media query for smaller screens (mobile) */
+@media (max-width: 768px) {
+    #typewriter-heading {
+        font-size: 1.5em; /* Reduce the font size for mobile */
+        max-width: 80%; /* Reduce the width for better fit on mobile */
+        margin: 0 auto; /* Center align */
+    }
+}
+
+/* Further adjust for smaller mobile screens */
+@media (max-width: 480px) {
+    #typewriter-heading {
+        font-size: 1.2em; /* Even smaller font size for smaller devices */
+        max-width: 90%; /* Keep it responsive by adjusting the width */
+    }
+}
+
+/* Typewriter animation (unchanged) */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+/* Remove the background color on hover */
+#nav-links a:hover {
+    background-color: transparent; /* Ensure no background appears */
+    color: #D8D2C2; /* Optional: Change text color on hover if desired */
+    border: none; /* Ensure no border appears on hover */
+}
+/* Click/Active effect */
+#nav-links a:active {
+    transform: scale(0.95); /* Slightly scale down when clicked */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Add a slight shadow on click */
+}
