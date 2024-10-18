@@ -1262,3 +1262,139 @@ nav.scrolled {
     transform: scale(0.95); /* Slightly scale down when clicked */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Add a slight shadow on click */
 }
+/* Authentication section styling */
+#auth-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* Light background to match the site's palette */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .auth-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: transparent;
+  }
+  
+  .toggle-btn {
+    flex: 1;
+    padding: 12px;
+    cursor: pointer;
+    background-color: transparent; /* Transparent background */
+    color: #6A9C89; /* Matches the navbar button color */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Underline effect */
+  .toggle-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #6A9C89; /* Green underline color */
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0); /* Hidden by default */
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Show underline only on hover or active */
+  .toggle-btn:hover::after, .toggle-btn.active::after {
+    transform: scaleX(1); /* Show underline on hover or active */
+  }
+  
+  .toggle-btn.active {
+    color: #4CAF50; /* Change text color on active */
+  }
+  
+  .toggle-btn:active {
+    transform: scale(0.95); /* Add a slight shrink effect on click */
+  }
+  
+  .toggle-btn:hover {
+    color: #4CAF50; /* Change color on hover */
+    background-color: transparent; /* No background change */
+  }
+  
+  .form-container {
+    position: relative;
+  }
+  
+  .auth-form {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, opacity 0.5s;
+    animation: fadeInScale 0.5s ease forwards;
+  }
+  
+  .auth-form.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1.05); /* Slight scale for smoother appearance */
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 20px;
+    color: #6A9C89; /* Same green tone as navbar */
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6A9C89; /* Consistent button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Smooth scale animation */
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Media Queries for smaller devices */
+  @media (max-width: 768px) {
+    #auth-section {
+      width: 90%;
+    }
+  }
+  
